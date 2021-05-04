@@ -28,7 +28,7 @@ usethis::create_project(
   '/Users/scanelon/Documents/Repos/Teaching/rmarkdown-manuscript/'
 )
 ```
-
+3
 ```{bash project-tree, eval=FALSE}
 .
 ├── .Rproj.user
