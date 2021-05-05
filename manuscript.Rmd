@@ -3,6 +3,7 @@ title: "Manuscript Practice"
 author: "Silvia P. Canelón"
 date: "5/4/2021"
 #output: word_document
+output:
   html_document:
     theme: flatly
     toc: true
@@ -20,9 +21,17 @@ knitr::opts_chunk$set(
 )
 ```
 
+# Resources
+
+- [Writing Reproducible Research Papers with R Markdown](https://resulumit.com/teaching/rmd_workshop#18)
+- [3.4 Word document | R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/word-document.html)
+- [Chapter 13 Journals | R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/journals.html)
+- [Transform Models into LaTeX Equations • equatiomatic](https://datalorax.github.io/equatiomatic/)
+- [gtsummary + R Markdown • gtsummary](https://www.danieldsjoberg.com/gtsummary/articles/rmarkdown.html)
+
 # Getting started
 
-## Set up an RStudio project
+## Set up an RStudio project if you don't have one already
 
 ```{r create-project, eval=FALSE}
 # filepath ends with the name of your project
