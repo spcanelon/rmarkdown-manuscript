@@ -2,7 +2,11 @@
 title: "Manuscript Practice"
 author: "Silvia P. Canelón"
 date: "5/4/2021"
-output: word_document
+#output: word_document
+  html_document:
+    theme: flatly
+    toc: true
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}
@@ -11,16 +15,16 @@ library(palmerpenguins)
 
 knitr::opts_chunk$set(
   echo = TRUE,
-  dpi = 300,
-  fig.align = "center"
-  )
+  include = FALSE,
+  dpi = 300
+)
 ```
 
 # Getting started
 
 ## Set up an RStudio project
 
-```{rcreate-project, eval=FALSE}
+```{r create-project, eval=FALSE}
 # filepath ends with the name of your project
 # example: rmarkdown-manuscript
 
@@ -28,8 +32,8 @@ usethis::create_project(
   '/Users/scanelon/Documents/Repos/Teaching/rmarkdown-manuscript/'
 )
 ```
-3
-```{bash project-tree, eval=FALSE}
+
+```{bash project-tree, eval=FALSE, include=TRUE}
 .
 ├── .Rproj.user
 ├── .gitignore
